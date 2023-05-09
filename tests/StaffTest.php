@@ -6,7 +6,7 @@ class StaffTest extends TestCase
 	{
 		require('Staff.php');
 		$staff = new Staff;
-		$staff->first_name = "Nguyen";
+		$staff->first_name = "Nguyen2";
 		$staff->last_name = "Bao";
 		$this->assertEquals('Nguyen Bao', $staff->getFullName());
 	}
@@ -20,7 +20,7 @@ class StaffTest extends TestCase
 	public function testOnlyFirstName()
 	{
 		$staff = new Staff;
-		$staff->first_name = "Nguyen";
+		$staff->first_name = "Nguyen2";
 		$this->assertEquals('Nguyen', $staff->getFullName());
 	}
 }
